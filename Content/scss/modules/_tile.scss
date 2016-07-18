@@ -1,0 +1,29 @@
+.tile {
+    border: 1px solid $gry;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+
+    &-img {
+        max-height: 200px;
+    }
+
+    &-head {
+        position: relative;
+
+        &-heading {
+            background-color: rgba($w, 0.75);
+            padding: 7px 10px;
+            position: absolute;
+            bottom: -22px;
+            z-index: 99;
+        }
+    }
+
+    &-content {
+        margin: 10px;
+
+        .button {
+            float: right;
+        }
+    }
+}

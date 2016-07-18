@@ -1,0 +1,227 @@
+body {  font-family:"Lato"; margin:0; line-height:24px; background-color:#f7f7f7; }
+::-moz-selection { /* Code for Firefox */
+    background-color: #ff6600;
+}
+
+::selection {
+    background-color: #ff6600;
+}
+p,h2,h3 {
+    color:#555;
+}
+/*********************************************General Elements************************************************************************/
+header { padding:20px 0; overflow:hidden; margin:0 auto; width:1000px; }
+h1 { margin:0; float:left; }
+.contact-header { float:right; text-align:right; }
+.contact-header span { display:block; font-weight:300; font-size:18px; }
+.contact-header i { padding-right:5px; width:auto; color:#ff6600; font-size:24px; }
+.mainlogo { width:200px; }
+
+.nav-bg { background-color:#02A7DD; }
+nav { clear:both; height:56px; color:#fff; text-align:center; padding:0; margin:0 auto; width:1000px; }
+nav ul { list-style:none; padding:0; overflow:hidden; margin:0; }
+nav a { color:#fff; text-decoration:none; float:left; padding:16px 25px; text-transform:uppercase; letter-spacing:0.5px; transition:background 0.3s, color 0.3s;}
+nav a:hover, nav li.active a { background-color:#f7f7f7; color:#FF6600; }
+body.homepage nav li a.homepage, body.portfolio nav li a.portfolio, body.services nav li a.services, body.contact nav li a.contact, body.web nav li a.web { background-color:#f7f7f7; color:#FF6600; }
+a#pull { display:none; }
+.clearfix:before,  
+.clearfix:after {  
+    content: " ";  
+    display: table;  
+}  
+.clearfix:after {  
+    clear: both;  
+}  
+.clearfix {  
+    *zoom: 1;  
+}  
+nav a#pull {
+    display: none;
+    background-color:#02A7DD!important;
+}       
+
+@media all and (max-width: 1024px) {
+    header { width:98%; }
+    nav { width:100%; }
+}
+
+@media all and (max-width: 650px) {
+   nav {
+        border-bottom: 0;
+        width:100%;
+    }
+    nav ul {
+        display: none;
+        height: auto;
+        width:100%;
+    }
+    nav a#pull {
+        display: block;
+        width: 100%;
+        position: relative;
+        background-color:#02A7DD;
+        height:41px;
+        padding:0;
+        font-size:24px;
+        padding-top:15px;
+    }
+    nav a#pull:hover {
+        background-color:#02A7DD;
+    }
+      nav li {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+    nav li a {
+        width:100%;
+        float:none;
+        display:block;
+        padding:6px 0;
+        background-color:#02A7DD;
+    }
+}
+
+
+@media all and (max-width: 480px) {
+    .mainlogo { display:block; margin:0 auto; padding-bottom:10px; }
+    .contact-header { float:none; text-align:center; }
+    .contact-header span { font-size:14px; }
+}
+
+
+/*********************************************Home Page************************************************************************/
+.main-content {  margin:0 auto; width:1000px; overflow:hidden; }
+ul.slides li { height:350px; }
+ul.slides li a { }
+ul.slides li.slide1 a { background:url("/images/doorstop_carousel.png") 0 0 no-repeat; background-size:cover; height:350px; display:block; }
+ul.slides li.slide2 a { background:url("/images/brisant_carousel.png") 0 0 no-repeat; background-size:cover; height:350px; display:block; }
+ul.slides li.slide3 a { background:url("/images/eurosecure_carousel.png") 0 0 no-repeat; background-size:cover; height:350px; display:block; }
+
+.about-info { padding-bottom:40px; overflow:hidden; }
+h2 { font-weight:300; margin:0; font-size:36px; padding:40px 0 20px; line-height:35px; }
+h3 { font-weight:300; margin:0; font-size:26px; padding:20px 0 10px; /***color:#FF6600;***/ }
+p { color#555; font-weight:300; }
+.about-info iframe { margin-top:30px; }
+
+@media all and (max-width: 1024px) {
+    .main-content { width:98%; }
+}
+@media all and (max-width: 580px) { 
+    .flexslider { display:none; }
+    p { padding:0 10px; }
+}
+
+/*********************************************Professional Portfolio Page************************************************************************/
+body.portfolio .about-info { padding-bottom:0; }
+#tabs ul { list-style:none; padding:0; }
+#tabs ul li { float:left; width:33%; text-align:center; border-top:1px solid #ddd; border-bottom:1px solid #ddd; padding:10px 0; margin-bottom:30px;}
+#tabs ul li a { text-decoration:none; display:block; }
+
+.ui-tabs-active, .ui-state-active { background-color:#fff; }
+.video { clear:both; margin-top:50px; overflow:hidden; }
+.video-info { float:left; width:45%; margin-top:30px;}
+.video-info span { font-weight:300; font-size:24px; }
+.video-info.left { padding-right:3%; padding-left:2%; }
+.video.right { background-color:#ededed; }
+.video.right .video-info { padding-left:3%; float:right; padding-right:2%; }
+.video.last { margin-bottom:50px; }
+.video img.house-img { width:48%; margin-top:55px; }
+.video a.fancybox { text-decoration:none; font-size:12px; color:#555; }
+.video a.fancybox span { float:right; }
+.video-info.left.home { padding-bottom:30px; }
+
+@media all and (max-width: 1024px) { 
+    .video iframe { width:400px; height:230px; padding-top:15px; }
+}
+
+@media all and (max-width: 820px) {
+    .video { margin-top:30px; }
+    .video.topvid { margin-top:0; }
+    .video.topvid .video-info { margin-top:0; }
+    .video-info { float:none; width:98%; } 
+    .video iframe { display:block; margin:0 auto; }
+    .video-info.left { padding-left:0; padding-right:0; }
+    #tabs ul li { float:none; width:100%; margin-bottom:10px; }
+    .video img.house-img { width:75%; margin:0 auto; }
+}
+@media all and (max-width: 580px) {
+    .video-info span { padding-left:10px; font-size:20px; } 
+}
+@media all and (max-width: 425px) { 
+    .video iframe { width:300px; height:165px; }
+}
+
+/*********************************************Contact Page************************************************************************/
+.contact-info { padding:20px 30px 40px 30px; border:1px solid #bbb; float:left; width:30%; }
+body.contact h2 { padding-bottom:50px; }
+body.contact .about-info .contact-info  span { display:block; }
+body.contact .about-info ul { list-style:none; margin:0; padding:0; }
+body.contact .about-info span.title { padding:10px 0; font-size:20px; font-weight:300;}
+
+.contact-form { width:60%; float:right; }
+
+@media all and (max-width: 700px) {
+    
+    iframe.map { 
+        display:none;
+    }
+    .contact-info {
+       display:none;
+    }
+    .contact-form {
+        width:100%;
+        float:none;
+    }
+}
+
+/*********************************************Web design Page************************************************************************/
+
+body.web .main-content { margin-bottom:40px; }
+ul.web-examples { list-style:none; margin:0 auto; padding:0; width:95%;  }
+ul.web-examples li { background:#fff; padding:3%; width:42%; float:left; text-align:center; margin-top:20px; box-shadow:0 2px 8px #ddd; margin-bottom:15px; }
+ul.web-examples li.firstweb { margin-right:4%; }
+ul.web-examples li h3 { text-align:left; }
+ul.web-examples li p { text-align:left; }
+a.client { position:relative; display:block; }
+a.client img { transition:opacity 0.3s; width:100%; }
+a.client span { position:absolute; left:50%; width:200px; padding:10px 0; margin-left:-100px; top:40%; background-color:#222; text-transform:uppercase; color:#fff;  background-color:transparent; color:transparent; transition:0.3s; }
+a.client:hover img { opacity:0.6; }
+a.client:hover span { background-color:#000; color:#fff; box-shadow:0 4px 7px rgba(0,0,0,0.4); }
+a.client:hover span:hover { background-color:#F60; color:#fff; }
+
+@media all and (max-width: 800px){
+    ul.web-examples li { width:auto; float:none; }
+    ul.web-examples li.firstweb { margin-right:0; }
+    a.client img { width:80%; }
+    
+}
+
+@media all and (max-width: 600px){
+    a.client img { width:80%; }
+}
+
+@media all and (max-width: 380px) {
+    ul.web-examples li h3 { padding-left:10px; }
+    
+}
+
+
+
+/*********************************************Footer************************************************************************/
+
+.footer-bg { background-color:#02A7DD; }
+footer { clear:both; padding:15px 0; color:#fff; margin:0 auto; width:1000px; overflow:hidden; }
+footer span { font-size:14px; float:left; padding-top:5px; }
+footer .social-links { float:right; }
+footer a { color:#fff; padding:5px; font-size:20px; }
+footer a:hover { color:#ff6600; border-color:#ff6600; }
+
+@media all and (max-width: 1024px) {
+    footer { width:98%; }
+}
+@media all and (max-width: 380px) { 
+    footer { text-align:center; }
+    footer .social-links { float:none; width:130px; margin:0 auto; padding-top:5px; }
+    footer span { float:none; }
+}

@@ -1,0 +1,31 @@
+$font: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+
+$weight: 300;
+$bold: 700;
+
+$p: 14;
+$lh: 22;
+$para: 19px;
+
+$h1: 36;
+$h2: 30;
+$h3: 26;
+$h4: 23;
+$h5: 18;
+$m: 16;
+$nav: $p;
+$pc: 11;
+    
+$let: $lh/$p;
+$let1: $lh/$h1;
+$let2: $lh/$h2;
+$let3: $lh/$h3;
+$let4: $lh/$h4;
+$let5: $lh/$h5;
+$letm: $lh/$m;
+$letn: $lh/$nav;
+$letc: $lh/$pc;
+
+$ret: ($lh/$p)*1rem;
+    
+$pwidth: 50;

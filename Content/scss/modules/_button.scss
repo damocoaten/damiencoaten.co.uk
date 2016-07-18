@@ -1,0 +1,57 @@
+.button {
+    border: 1px solid;
+    border-color: $infoAction;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 4px 0 5px;
+    margin-bottom: 15px;
+    -o-transition: all .16s ease-out;
+    -moz-transition: all .16s ease-out;
+    -webkit-transition: all .16s ease-out;
+    transition: all .16s ease-out;
+    width: 175px;
+
+    & p {
+        margin: 0;
+        text-align: center;
+    }
+
+    &-CTA {
+        background-color: $primaryAction;
+        border-color: darken($primaryAction, 5%);
+        color: $w;
+        &:hover {
+            background-color: lighten($primaryAction, 3%);
+        }
+    }
+
+    &-secondary {
+        background-color: $secondaryAction;
+        border-color: darken($secondaryAction, 5%);
+        color: $w;
+        &:hover {
+            background-color: lighten($secondaryAction, 3%);
+        }
+    }
+
+    &-info {
+        background-color: $infoAction;
+        color: $w;
+        &:hover {
+            background-color: lighten($infoAction, 3%);
+        }
+    }
+
+    &-standard {
+        &:hover {
+            color: $infoAction;
+        }
+    }
+
+    &-lrg {
+        @extend .button;
+        padding: 12px 0;
+        max-width: 350px;
+        min-width: 300px;
+    }
+}

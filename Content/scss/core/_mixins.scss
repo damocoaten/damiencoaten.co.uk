@@ -1,0 +1,22 @@
+@mixin bp($point) {
+    @if $point == 1400 {
+        @media screen and (min-width: 1400px) {
+            @content;
+        }
+    }
+    @if $point == fullWidth {
+        @media screen and (max-width: ($width*($p/16)*1em)) {
+            @content;
+        }
+    }
+    @else if $point == tablet {
+        @media screen and (max-width: ($tablet*($p/16)*1em)) {
+            @content;
+        }
+    }
+    @else if $point == mobile {
+        @media screen and (max-width: ($mobile*($p/16)*1em)) {
+            @content;
+        }
+    }
+}

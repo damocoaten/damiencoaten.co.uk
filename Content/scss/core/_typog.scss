@@ -1,0 +1,68 @@
+body {
+    background-color: $backgroundMain;
+    color: $w;
+    font-family: 'Lato', sans-serif; 
+}
+
+h1 {
+    font-size: ($h1/$p)*1em;
+    line-height: $let1*2;
+    margin-bottom: $let1*1em;
+}
+    
+h2 {
+    font-size: ($h2/$p)*1em;
+    line-height: $let2*2;
+    margin-bottom: $let2*1em;
+}
+    
+h3 {
+    font-size: ($h3/$p)*1em;
+    line-height: $let3;
+    margin-bottom: $let3*1em;
+}
+    
+h4 {
+    color: $blk;
+    font-size: ($h4/$p)*1em;
+    line-height: $let4;
+    margin-bottom: $let4*1em;
+}
+    
+h5 {
+    font-size: ($h5/$p)*1em;
+    font-weight: $bold;
+    line-height: $let5;
+    margin-bottom: $let5*1em;
+}
+    
+p {
+    font-size: $para;
+    line-height: $let5*1em;
+    margin-bottom: $let*1em;
+    max-width: $pwidth*1em;
+}
+    
+strong, b {
+    font-weight: $bold;
+}
+    
+em, i {
+    font-style: italic;
+}
+        
+h1, h2, h5, p {
+    max-width: $pwidth*1rem;
+    
+    a {
+        border-bottom: 1px solid $org;
+    }
+}
+
+h1, h2, h3, h4, h5, p {
+    margin-bottom: $ret;
+}
+
+.heading {
+    color: $logoYel;
+}

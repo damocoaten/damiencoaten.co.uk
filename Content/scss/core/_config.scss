@@ -1,0 +1,43 @@
+$org: #ff9e16;
+$lorg: #fec240;
+$dorg: #f76407;
+$grn: #3fae2a;
+$lblu: #3493f2;
+$blu: #2f7de1;
+$sblu: #346094;
+$dblu: #3b5cad;
+$bgry: #ced8dd;
+$w: #fff;
+$gry: #eee;
+$vblk: #888;
+$dgry: #555759;
+$blk: #111820;
+$lblk: #383a35;
+
+$logoBlu: #0DAFD4;
+$logoDBlu: #00214A;
+$logoYel: #F2B91A;
+$backgroundMain: #60646D;
+
+$bdr: lighten($bgry,6%);
+$dbdr: lighten($bgry,12%);
+
+$postW: 340px;
+$postNo: 3;
+$ms: $lh*.5px;
+
+$headHeight: 80px;
+$sideWidth: 210px;
+
+$width: (($postW * $postNo) + ($ms * ($postNo * 2)));
+
+$tablet: (($pwidth*1.618) + ($let*2));
+$mobile: ($pwidth + ($let*2));
+
+$siteWidth: 1325px;
+$lineHeight: 1.5em;
+
+/****buttons*****/
+$primaryAction: #3fae2a;
+$secondaryAction: #ff9e16;
+$infoAction: #3493f2;
